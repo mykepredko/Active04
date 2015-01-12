@@ -1,1 +1,38 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="7" inline="false" x="6" y="-7">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="14">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="expansion_exp1power" id="20">
+        <field name="SERVO">ON</field>
+        <next>
+          <block type="robot_delay" id="22" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="29">
+                <field name="NUM">500</field>
+              </block>
+            </value>
+            <next>
+              <block type="expansion_exp1power" id="30">
+                <field name="SERVO">OFF</field>
+                <next>
+                  <block type="robot_delay" id="31" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="32">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
