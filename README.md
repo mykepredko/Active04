@@ -3,7 +3,7 @@ Active04
 
 Scratch
 
-Flash LEDs
+Flash LED wired into Expansion Port 1 
 
 ### Project Information
 ```
