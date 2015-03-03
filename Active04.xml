@@ -40,7 +40,4 @@
       </block>
     </next>
   </block>
-  <block type="variables_set" id="10" inline="true" x="305" y="139">
-    <field name="VAR">item</field>
-  </block>
 </xml>
